@@ -29,11 +29,11 @@
             <Description resid="GetStarted.Description"/>
             <LearnMoreUrl resid="GetStarted.LearnMoreUrl"/>
           </GetStarted>
-          <FunctionFile resid="Commands.Url"/>
+          <FunctionFile resid="ExcelCommands.Url"/>
           <ExtensionPoint xsi:type="PrimaryCommandSurface">
             <OfficeTab id="TabHome">
               <Group id="ExcelCommandsGroup">
-                <Label resid="CommandsGroup.Label"/>
+                <Label resid="ExcelCommandsGroup.Label"/>
                 <Icon>
                   <bt:Image size="16" resid="Icon.16x16"/>
                   <bt:Image size="32" resid="Icon.32x32"/>
@@ -52,7 +52,7 @@
                   </Icon>
                   <Action xsi:type="ShowTaskpane">
                     <TaskpaneId>ExcelButtonId</TaskpaneId>
-                    <SourceLocation resid="Taskpane.Url"/>
+                    <SourceLocation resid="ExcelTaskpane.Url"/>
                   </Action>
                 </Control>
                 <Control xsi:type="Button" id="ExcelFunctionButton">
@@ -82,11 +82,11 @@
             <Description resid="GetStarted.Description"/>
             <LearnMoreUrl resid="GetStarted.LearnMoreUrl"/>
           </GetStarted>
-          <FunctionFile resid="Commands.Url"/>
+          <FunctionFile resid="WordCommands.Url"/>
           <ExtensionPoint xsi:type="PrimaryCommandSurface">
             <OfficeTab id="TabHome">
               <Group id="WordCommandsGroup">
-                <Label resid="CommandsGroup.Label"/>
+                <Label resid="WordCommandsGroup.Label"/>
                 <Icon>
                   <bt:Image size="16" resid="Icon.16x16"/>
                   <bt:Image size="32" resid="Icon.32x32"/>
@@ -105,7 +105,7 @@
                   </Icon>
                   <Action xsi:type="ShowTaskpane">
                     <TaskpaneId>ButtonIdWord</TaskpaneId>
-                    <SourceLocation resid="Taskpane.Url"/>
+                    <SourceLocation resid="WordTaskpane.Url"/>
                   </Action>
                 </Control>
                 <Control xsi:type="Button" id="WordFunctionButton">
@@ -140,12 +140,15 @@
       </bt:Images>
       <bt:Urls>
         <bt:Url id="GetStarted.LearnMoreUrl" DefaultValue="https://go.microsoft.com/fwlink/?LinkId=276812"/>
-        <bt:Url id="Commands.Url" DefaultValue="https://localhost:3000/commands.html"/>
-        <bt:Url id="Taskpane.Url" DefaultValue="https://localhost:3000/taskpane.html"/>
+        <bt:Url id="ExcelCommands.Url" DefaultValue="https://localhost:3000/commands.html"/>
+        <bt:Url id="ExcelTaskpane.Url" DefaultValue="https://localhost:3000/taskpane.html"/>
+        <bt:Url id="WordCommands.Url" DefaultValue="https://localhost:3000/commands.html"/>
+        <bt:Url id="WordTaskpane.Url" DefaultValue="https://localhost:3000/taskpane.html"/>
       </bt:Urls>
       <bt:ShortStrings>
         <bt:String id="GetStarted.Title" DefaultValue="Get started with your sample add-in!"/>
-        <bt:String id="CommandsGroup.Label" DefaultValue="Commands Group"/>
+        <bt:String id="WordCommandsGroup.Label" DefaultValue="Word Commands Group"/>
+        <bt:String id="ExcelCommandsGroup.Label" DefaultValue="Excel Commands Group"/>
         <bt:String id="TaskpaneButton.Label" DefaultValue="Show Taskpane"/>
         <bt:String id="FunctionButton.Label" DefaultValue="Perform Function"/>
       </bt:ShortStrings>

@@ -7,7 +7,7 @@
   },
   "license": "MIT",
   "config": {
-    "app-to-debug": "word",
+    "app-to-debug": "Word",
     "app-type-to-debug": "desktop",
     "dev-server-port": 3000
   },
